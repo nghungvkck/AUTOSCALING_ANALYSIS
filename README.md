@@ -1,5 +1,10 @@
 # Dự án: Autoscaling Forecasting & Optimization — Chủ đề: Autoscaling
 
+## Tài liệu bổ sung
+
+- [Demo và chính sách autoscaling theo mã nguồn hiện tại](readme_demo_policies.md): phân biệt luồng đọc CSV, inference qua API và các chính sách scaling của từng luồng.
+- [Dữ liệu đã xử lý](data/README.md), [dữ liệu thô](raw_data/README.md) và [notebook phân tích](notebook/README.md).
+
 ## 1. Tóm tắt
 
 ### Vấn đề cần giải quyết

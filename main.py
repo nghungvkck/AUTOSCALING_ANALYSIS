@@ -1,4 +1,8 @@
-"""Entry point for full training pipeline."""
+"""Train XGBoost, LightGBM, then Hybrid models for 1m, 5m, and 15m windows.
+
+Run from the repository root with the raw log files configured in
+configs/train_config.yaml available. Outputs go to forecasting/artifacts/.
+"""
 
 import sys
 from pathlib import Path

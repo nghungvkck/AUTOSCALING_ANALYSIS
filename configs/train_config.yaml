@@ -1,3 +1,7 @@
+# main.py dùng cấu hình này cho pipeline huấn luyện từ log thô.
+# Các file train_raw/test_raw phải được cung cấp riêng trong raw_data/.
+# Một số hyperparameter vẫn được đặt trực tiếp trong forecasting/train/;
+# thay đổi mục model bên dưới chưa bảo đảm mọi trainer sẽ dùng giá trị mới.
 data:
   paths:
     train_raw: "raw_data/train.txt"

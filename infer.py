@@ -1,5 +1,9 @@
 """
 Example inference script using trained models.
+
+This helper uses ModelPredictor, independently of the demo's CSV visualization
+and metrics API. Its preprocessing and model-loading contracts need alignment
+with training before treating it as a validated inference entry point.
 """
 
 import sys

@@ -2,6 +2,22 @@
 
 Interactive dashboard for traffic forecasting and autoscaling decisions using machine learning models.
 
+## Current demo behavior
+
+The Forecast tab displays prediction CSVs from `forecasting/artifacts/predictions/`.
+The Optimization tab replays those predictions with historical request counts and
+compares Hybrid, Reactive, and Fixed server policies. Both tabs process files
+directly in Streamlit; the API Demo tab calls the separately running FastAPI server.
+
+`POST /forecast/metrics` runs LightGBM inference for the `5m` timeframe using
+`forecasting/artifacts/models/`. The `/recommend-scaling` endpoint uses a separate
+rule set from the Optimization tab, so their recommendations may differ.
+Some older helpers still default to `forecasting/models/`; the Models section
+below describes that older layout rather than the current training output path.
+
+See [demo workflows and policy details](../readme_demo_policies.md) for exact
+thresholds, cooldown behavior, cost assumptions, and known implementation limits.
+
 ## Features
 
 - **Traffic Overview**: Visualize request patterns, burst detection, and events
